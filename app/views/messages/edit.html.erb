@@ -1,0 +1,6 @@
+<p>更新</p>
+<%= form_with model: @message, url: message_path, method: :put, local: true do |f| %>
+  <p><%= f.text_field :title %></p>
+  <p><%= f.text_area :content %></p>
+  <%= f.submit "送信" %>
+<% end %>
